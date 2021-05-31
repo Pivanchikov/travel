@@ -1,87 +1,53 @@
 {
-  "name": "react-webpack-typescript-starter",
+  "name": "test",
   "version": "0.1.0",
-  "description": "Starter kit for React, Webpack (with Hot Module Replacement), Typescript and Babel.",
-  "keywords": [
-    "react",
-    "webpack",
-    "typescript",
-    "babel",
-    "sass",
-    "hmr",
-    "starter",
-    "boilerplate"
-  ],
-  "author": "",
-  "license": "MIT",
-  "scripts": {
-    "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
-    "clean-dist": "rimraf dist/*",
-    "lint": "tslint -t codeFrame -p ./tsconfig.json",
-    "start": "yarn run start-dev",
-    "start-dev": "webpack serve --config=configs/webpack/dev.js",
-    "start-prod": "yarn run build && node express.js",
-    "test": "jest --coverage --watchAll --config=configs/jest.json"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint && pretty-quick --staged",
-      "post-commit": "git update-index -g"
-    }
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.10",
-    "@babel/plugin-syntax-jsx": "^7.12.13",
-    "@babel/preset-env": "^7.13.10",
-    "@babel/preset-react": "^7.12.13",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.34",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0",
-    "tslint": "^5.13.1",
-    "tslint-config-airbnb": "^5.11.1",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-react": "^3.6.0",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.1.2",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "express": "^4.17.1",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.1",
-    "image-webpack-loader": "^7.0.1",
-    "jest": "^26.6.3",
-    "node-sass": "^5.0.0",
-    "prettier": "^2.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^12.20.13",
+    "@types/react": "^17.0.8",
+    "@types/react-dom": "^17.0.5",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
+    "eslint": "^7.27.0",
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
-    "rimraf": "^3.0.2",
-    "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
-    "typescript": "^4.2.3",
-    "webpack": "^5.25.0",
-    "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3"
+    "react-scripts": "4.0.3",
+    "typescript": "^4.3.2",
+    "web-vitals": "^1.1.2"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-react",
-      "@babel/preset-typescript"
-    ],
-    "plugins": [
-      "react-hot-loader/babel"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   },
-  "dependencies": {
-    "@fluentui/react": "^8.6.1",
-    "yarn": "^1.22.10"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-react": "^7.24.0"
   }
 }
